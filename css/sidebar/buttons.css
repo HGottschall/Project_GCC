@@ -1,0 +1,130 @@
+.btn {
+    display: flex;
+    align-items: center;
+    border-radius: 3vw 0 0 3vw;
+    width: 90%;
+    border: none;
+    margin-bottom: 0.5vw;
+    cursor: pointer;
+    line-height: 250%;
+    text-align: left;
+    background: var(--btn-background);
+}
+
+.btn-icon {
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 20%;
+    height: 70%;
+    margin-left: 1vw;
+}
+
+.btn-text {
+    flex: 1;
+    padding-left: 1vw;
+}
+
+.btn-top {
+    height: 10%;
+}
+
+.btn-bottom {
+    height: 30%;
+}
+
+.btn-shadow {
+    box-shadow: var(--btn-shadow);
+}
+
+.btn-active{
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    /* color: var(--dark-blue); */
+    background-color: white;
+}
+
+
+/* ICONES DOS BOTÕES */
+/* INICIO */
+#btn-inicio {
+    background-image: url('../../img/Light/Home_Light.png');
+}
+.btn-active #btn-inicio, .btn:active #btn-inicio{
+    background-image: url('../../img/Dark/Home_Dark.png');
+}
+.btn-active #btn-inicio-txt{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+
+/* STATUS */
+#btn-status {
+    background-image: url('../../img/Light/ProgressBar_Light.png');
+}
+.btn-active #btn-status, .btn:active #btn-status{
+    background-image: url('../../img/Dark/ProgressBar_Dark.png');
+}
+.btn-active #btn-status-txt{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+
+/* DIRETORES */
+#btn-diretores {
+    background-image: url('../../img/Light/Diretor_Light.png');
+}
+.btn-active #btn-diretores, .btn:active #btn-diretores{
+    background-image: url('../../img/Dark/Diretor_Dark.png');
+}
+.btn-active #btn-diretores-txt{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+
+
+/* REGIONAIS */
+#btn-regionais {
+    background-image: url('../../img/Light/World_Light.png');
+}
+.btn-active #btn-regionais, .btn:active #btn-regionais{
+    background-image: url('../../img/Dark/World_Dark.png');
+}
+.btn-active #btn-regionais-txt{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+/* DETALHES */
+#btn-detalhes {
+    background-image: url('../../img/Light/Detalhes_Light.png');
+}
+.btn-active #btn-detalhes, .btn:active #btn-detalhes{
+    background-image: url('../../img/Dark/Detalhes_Dark.png');
+}
+.btn-active #btn-detalhes-txt{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+
+
+/* CONFIGURAR */
+#btn-configurar {
+    background-image: url('../../img/Light/Settings_Light.png');
+}
+.btn:active #btn-configurar {
+    background-image: url('../../img/Dark/Settings_Dark.png');
+}
+
+/* FILTRO */
+#btn-filtro {
+    background-image: url('../../img/Light/Filter_Light.png');
+}
+.btn:active #btn-filtro {
+    background-image: url('../../img/Dark/Filter_Dark.png');
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-text{
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: white;
+}
+
+.btn-text:active {
+    color: var(--dark-blue);
+    font-weight: 600;
+
+}
+
+.btn:active{
+    background: white;
+}
+
+.card-title{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.card-content {
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+.left-content {
+    color: #7db5c5;
+}
+
+.middle-content {
+    color: #D9D9D9;
+}
+
+.right-content {
+    color: #5994B9;
+}

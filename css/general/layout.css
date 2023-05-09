@@ -1,0 +1,22 @@
+:root {
+    --dark-blue: #070022;
+    --dark-blue-secondary: #201258;
+
+    --dark-blue-chart: #114566;
+    --light-blue-chart: #5994B9;
+
+    --offset-white: #FFFAF6;
+    --btn-background: #002941;
+    --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --font-family: "Montserrat";
+    font-size: 20px;
+    
+}
+
+.body {
+    overflow: hidden;
+}
+
+* {
+    user-select: none; /* Standard syntax */
+}

@@ -1,0 +1,38 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 15%;
+    height: 100%;
+    background: var(--dark-blue);
+}
+
+.logo {
+    display: flex;              /* PERMITE ALINHAR A LOGO NO CENTRO VERTICAL*/
+    justify-content: center;    /* ALINHA A LOGO NO CENTRO HORIZONTAL*/
+    height: 25%;
+}
+
+.logo img {
+    width: 80%;                 /* MANTÉM A LOGO NA PROPORÇÃO INDEPENDENTEMENTE DO ZOOM NA PÁGINA */
+    cursor: pointer;
+    justify-content: center;
+    
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: center; */
+    height: 55%;
+}
+
+.menu-btn-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 20%;
+}

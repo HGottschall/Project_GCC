@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+:root {
+    /* FAZER CONTA EM PYTHON E ALTERAR VIA HTTP REQUEST */
+    --valor: calc(440 - (440 * 78) / 100);
+}
+
+@keyframes circulo_progresso {
+    0% {
+      stroke-dashoffset: 440;
+    }
+    100% {
+      /* stroke-dashoffset: calc(440 + (440 - (440 * 90) / 100)); */
+      stroke-dashoffset: var(--valor);
+    }
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkkhaki;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.box .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box .percent svg circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: black;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.box .percent svg circle:nth-child(2) {
+    stroke: #2e2a2a;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: circulo_progresso 2s ease-in-out forwards;
+  }
+
+
+.box .percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.box .percent .number h2 {
+    font-size: 48px;
+}
+
+.box .percent .number h2 span{
+    font-size: 48px;
+}
+
+.box .text {
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
